@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+    color: white;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -16,8 +20,11 @@ font-style: italic;
     padding: 1rem;
 }
 .circle{
-     background: linear-gradient(45deg,orange,yellow);
     border-radius: 100%;
     z-index: -1;
     position:absolute;
+   }
+   .leftabout{
+    display: flex;
+    align-items: center;
    }
