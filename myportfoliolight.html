@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My PortFolio</title>
+    <meta name="Prateek Bajpai Portfolio" content="Java Full Stack Developer">
+    <meta name="title"  property="og:type" content="website">
+
+    <title>Prateek Bajpai PortFolio</title>
 </head>
 
 <link rel="stylesheet" href="css/portfoliolight.css">
@@ -14,15 +17,9 @@
 <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
 
 <body>
-    <div class="navbar">
-        <div class="navleft">
-            <h1>< </h1>
-            <h1>&nbsp</h1>
-            <h1 style="font-family: 'The Nautigal', cursive;">Prateek Bajpai &nbsp</h1>
-            <h1> /></h1>
-        </div>
-        <div class="navright">
-            <ul style="display: flex; align-items: center;">
+    <div class="navbar h-nav">
+        
+            <ul class="navright v-class">
                 <li><a style="text-decoration:none; color: lightseagreen;" href="#about">About</a></li>
                 <li><a style="text-decoration:none; color: lightseagreen;" href="#skill">Skills</a></li>
                 <li><a style="text-decoration:none; color: lightseagreen;" href="#project">Projects</a> </li>
@@ -32,18 +29,32 @@
                 <li style="display:flex; align-items: center;"><img style="width:2rem" src="img/sun.png" alt=""
                         srcset=""> </li>
                 <li style="margin-left:-1rem ;"> <a style="text-decoration: none; color:lightseagreen"
-                        href="myProtfolio.html">Light Mode</a></li>
+                        href="myProtfolio.html">Dark Mode</a></li>
 
             </ul>
-        </div>
+        
+        
     </div>
-    <div style="margin: 2rem 6rem;">
-        <div class="leftabout">
-              <div style="width: 60%; ">
-                <div style="width: 70%;">
+    <div class="hamburger">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+
+    </div>
+    <div class="navleft">
+        <h1>< </h1>
+        <h1>&nbsp</h1>
+        <h1 style="font-family: 'The Nautigal', cursive;">Prateek Bajpai &nbsp</h1>
+        <h1> /></h1>
+        
+    </div>
+     <div class="about">
+        
+              <div id="aboutsection">
+                <div id="aboutsummary">
                
-                   <a name="about"><h1 style="font-size:2rem">Hi I'm Prateek 💻</h1></a> 
-                    <p style="font-size:1.1rem ;">A passionate Software Developer 🚀 experienced in building Full-Stack
+                   <a name="about"><h1>Hi I'm Prateek 💻</h1></a> 
+                    <p>A passionate Software Developer 🚀 experienced in building Full-Stack
                         applications with a focus
                         on maintaining databases and infrastructure server-side code. </p>
 
@@ -59,29 +70,28 @@
                                      src="img\leetcode.png" alt="" srcset=""></a>
                             <a  href="https://twitter.com/PKbajpai123" target="_blank"><img
                                      src="img\twitter.png" alt="" srcset=""></a>
-                            <a  href="mailto: prateek.cse.uiet@gmail.com" target="_blank"><img
-                                     src="img\google-plus.png" alt="" srcset=""></a>
+                            
                         </div>
                         <div class="aboutbutton" >
                             <a href="https://drive.google.com/file/d/1mrO7lltaDPJNrzOQqQ7Avc-dn8mwijBW/view?usp=sharing"
                                 target="_blank"> <button style="margin-right:1rem ;">Resume</button></a>
         
-                                    <a href="#contact"> <button style="border-bottom-left-radius:2rem; 
-                                    border-top-left-radius:0rem; 
-                                        border-top-right-radius: 2rem;    border-bottom-right-radius: 0rem;">Contact Me</button></a>          
+                                    <a href="#contact"> <button style="border-bottom-left-radius:2em; 
+                                    border-top-left-radius:0em; 
+                                        border-top-right-radius: 2em;    border-bottom-right-radius: 0em;">Contact Me</button></a>          
                         </div>
                 </div>
 
                
             </div>
 
-            <div style="width:40%; display: flex; justify-content: end;">
-                <img style="width:20rem" src="img\Home Design.png" alt="">
+            <div id="aboutimage">
+                <img src="img\Home Design.png" alt="">
 
             </div>
 
 
-        </div>
+        
         
     </div>
     <div class="sectionheader">
@@ -90,79 +100,79 @@
         <hr>
 
     </div>
-    <div style="display: flex; margin: 2rem 6rem;">
-        <div style="width:55%;">
-            <img style="width:20rem;" src="img\skill.png" alt="">
+    <div class="skillsection">
+        <div id="skillsectionimage">
+            <img src="img\skill.png" alt="">
 
         </div>
-        <div style="width:45% ;">
+        <div id="skillsectioncontent">
             <h1 class="sectionh1">What I Know
             </h1>
-            <p style="font-size:1.1rem">CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK 😎
+            <p>CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK 😎
 
             </p>
-            <div class="skillimages">
-                <div class="skillimage">
+            <div id="skillimages">
+                <div id="skillimage">
                     <img  src="img/html.png" alt="">
                     <p >HTML5</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img src="img/css-3.png" alt="">
                     <p>CSS3</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img src="img/bootstrap (1).png" alt="">
                     <p>Bootstrap5</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img src="img/java-script.png" alt="">
                     <p>JavaScript</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img src="img/java.png" alt="">
                     <p>Java</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img  src="img/c-logo.png" alt="">
                     <p>C++</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img  src="img/jsp-file (1).png" alt="">
                     <p>JSP</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img  src="img/php (1).png" alt="">
                     <p>PHP</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img  src="img/sql-server.png" alt="">
                     <p>MySQL</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img  src="img/hibernate (2).png" alt="">
                     <p>Hibernate</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img  src="img/figma (2).png" alt="">
                     <p>Figma</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img  src="img/canva1.png" alt="">
                     <p>Canva</p>
                 </div>
                 <div
-                    class="skillimage">
+                    id="skillimage">
                     <img  src="img/azure (1).png" alt="">
                     <p>MS Azure</p>
                 </div>
@@ -174,24 +184,24 @@
     </div>
 
 
-    <div style="margin: 2rem 6rem;">
+    <div id="skillprofieciency">
         <h1 class="sectionh1">Skill Proficiency 👷‍♂️
         </h1>
         <div>
             <div>
-                <p style="font-size:1.4rem">Frontend/Design</p>
+                <p>Frontend/Design</p>
                 <div class="cover">
                     <span style="width:85%; "></span>
                 </div>
             </div>
             <div>
-                <p style="font-size:1.4rem">Backend</p>
+                <p>Backend</p>
                 <div class="cover">
                     <span style="width:70%; "></span>
                 </div>
             </div>
             <div>
-                <p style="font-size:1.4rem">Programming</p>
+                <p>Programming</p>
                 <div class="cover">
                     <span style="width:80%; "></span>
                 </div>
@@ -208,9 +218,9 @@
     <div style="width:85%; margin: auto;">
         <h1 class="sectionh1">My Projects 💻</h1>
         <br>
-        <div style="display:flex; justify-content: space-between;">
+        <div style="display:flex; justify-content: space-evenly; flex-flow: row wrap;">
             <div class="card">
-                <img style="width:100%; height: 35%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;"
+                <img
                     src="img/Screenshot (1107).png" alt="">
                 <div class="cardtitle">
                     <h2>Clothing Ecommerce</h2>
@@ -227,7 +237,7 @@
 
             </div>
             <div class="card">
-                <img style="width:100%; height: 35%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;"
+                <img
                     src="img/Screenshot (1110).png" alt="">
                 <div class="cardtitle">
                     <h2>Electricity Management</h2>
@@ -244,7 +254,7 @@
 
             </div>
             <div class="card">
-                <img style="width:100%; height: 35%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;"
+                <img 
                     src="img/Screenshot (1114).png" alt="">
                 <div class="cardtitle">
                     <h2>Banking Management</h2>
@@ -267,9 +277,9 @@
 
     <br>
     <div class="sectionheader">
-        <hr style="width:40%">
+        <hr >
      <a name="experience"><h1>Work Experience</h1></a>   
-        <hr style="width:40%">
+        <hr >
 
 
     </div>
@@ -278,19 +288,19 @@
         <h1 class="sectionh1">My Experiences 👨‍💻
         </h1>
         <br>
-        <div style="display: flex; background-color: white; border-radius: 1rem;">
+        <div class="experience">
 
-            <div class="experiencetitle">
+            <div id="experiencetitle">
 
-                <h1 style="font-size: 1.5rem; text-align: center;">Future Ready Talent</h1>
+                <h1>Future Ready Talent</h1>
                 <img style="width:9rem" src="img/frt.png" alt="" srcset="">
             </div>
             <div class="triangle">
 
             </div>
-            <div class="experiencesection">
-                <h1 style="font-size: 1.5rem;">Virtual Internship in Microsoft Azure</h1>
-                <h2 style="font-size: 1.3rem; ">Nov 2021- Feb 2022</h2>
+            <div id="experiencesection">
+                <h1>Virtual Internship in Microsoft Azure</h1>
+                <h2>Nov 2021- Feb 2022</h2>
                 <p> Project: Deploy Web Application using Azure Cloud Services</p>
                 <p>What I'm Learn</p>
                 <ul>
@@ -304,19 +314,19 @@
             </div>
         </div>
         <br>
-        <div style="display: flex; background-color: white; border-radius: 1rem;">
+        <div class="experience">
 
-            <div class="experiencetitle">
+            <div id="experiencetitle">
 
-                <h1 style="font-size: 1.5rem; text-align: center;">SmartKnower</h1>
+                <h1>SmartKnower</h1>
                 <img style="width:9rem" src="img/sk.png" alt="" srcset="">
             </div>
             <div class="triangle">
 
             </div>
-            <div class="experiencesection">
-                <h1 style="font-size: 1.5rem;">Campus Ambassador</h1>
-                <h2 style="font-size: 1.3rem;">Nov 2020- May 2021</h2>
+            <div id="experiencesection">
+                <h1>Campus Ambassador</h1>
+                <h2>Nov 2020- May 2021</h2>
                 <p>What I'm Learn</p>
                 <ul>
                     <li>Build Network and Relationship with College Friends and Interact with them.</li>
@@ -328,19 +338,19 @@
             </div>
         </div>
         <br>
-        <div style="display: flex; background-color: white; border-radius: 1rem;">
+        <div class="experience">
 
-            <div class="experiencetitle">
+            <div id="experiencetitle">
 
-                <h1 style="font-size: 1.5rem; text-align: center;">Internshala</h1>
-                <img style="width:9rem" src="img/internshala.svg" alt="" srcset="">
+                <h1>Internshala</h1>
+                <img  src="img/internshala.svg" alt="" srcset="">
             </div>
             <div class="triangle">
 
             </div>
-            <div class="experiencesection">
-                <h1 style="font-size: 1.5rem;">Internshala Student Partner</h1>
-                <h2 style="font-size: 1.3rem;">Sep 2020- Nov 2020</h2>
+            <div id="experiencesection">
+                <h1>Internshala Student Partner</h1>
+                <h2>Sep 2020- Nov 2020</h2>
                 <br>
                 <br>
             </div>
@@ -351,9 +361,9 @@
 
 
     <div class="sectionheader">
-        <hr style="width:42%">
+        <hr >
        <a name="certification"><h1>Certification</h1></a> 
-        <hr style="width:42%">
+        <hr >
 
     </div>
     <div style="width:85%; margin: auto;">
@@ -469,11 +479,17 @@
 
         </div>
     </div>
+    <div class="sectionheader">
+    <hr>
+  <a name="contact"><h1>Contact Me</h1></a>  
+    <hr >
+
+</div>
 
 
-    <div style="width:80%; margin: auto;">
-      <a name="contact"></a>  <h1 style="text-align: center;" class="sectionh1">
-            Contact Me 📞</h1>
+    <div style="width:85%; margin: auto;">
+        <h1 style="text-align: center;" class="sectionh1">
+            Touch with Me 📞</h1>
             <div style="display: flex; flex-direction:column;  align-items:center">
                 <p style="text-align: center; font-size: 1.1rem;">YOU WANNA WANT TO CONTACT ME. MY INBOX IS OPEN FOR ALL</p> 
 
@@ -499,14 +515,15 @@
 </div>
 <br>
 <div class="sectionheader" style="background-color: lightseagreen;">
-    <hr style="width:40%">
-    <h1 style="color: white; font-size: 1.5rem; " ><span style="color:red">&#10084</span> Prateek Bajpai</h1>
-    <hr style="width:40%">
+    <hr >
+    <h1 style="color: white;" ><span style="color:red">&#10084</span> Prateek Bajpai</h1>
+    <hr >
 
 </div>
 <div style="text-align: center; font-size:1.1rem; padding-bottom:1rem; background-color: lightseagreen; color: white">
     &#169 Prateek Bajpai. All rights reserved.
 </div>
+<script src="js/script.js"></script>
 </body>
 
 </html>
