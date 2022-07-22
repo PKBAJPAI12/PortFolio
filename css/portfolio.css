@@ -620,14 +620,14 @@ animation: ringcall 6s ease-in-out 0.5s infinite alternate;
         height:3px;
         width:30px;
         margin-bottom: 0.2em;
-        background-color:black;
+        background-color:white;
     }
     #line2{
         height:3px;
         width:27px;
         margin-left:3px;
         margin-bottom: 0.2em;
-        background-color:black;
+        background-color:white;
     }
     #line3{
         height:3px;
@@ -635,7 +635,7 @@ animation: ringcall 6s ease-in-out 0.5s infinite alternate;
         margin-left:6px;
 
         margin-bottom: 0.2em;
-        background-color:black;
+        background-color:white;
     }
     .navbar{
         flex-direction: column;
