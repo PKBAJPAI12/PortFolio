@@ -71,15 +71,97 @@ body p{
        }
        #aboutsection{
         width: 60%;
+        animation: moveleft 3s ease-in-out 0.5s 1;
+
        }
+       @keyframes moveleft {
+        0%{
+            transform: translateX(30%);
+            opacity: 0;
+        }
+        
+        100%{
+            transform: translateX(0%);
+            opacity: 1;
+
+
+        }
+       }
+       #aboutsection h1{
+        font-size: 2em;
+    animation: fadetext 2s linear 0.5s 1 alternate;
+    }
+    @keyframes fadetext {
+        0%{
+            transform: translateX(-20%);
+            opacity: 0;
+        }
+        25%{
+            transform: translateX(-15%);
+            opacity: 0.25;
+    
+        }50%{
+            transform: translateX(-10%);
+            opacity: 0.5;
+    
+        }75%{
+            transform: translateX(-5%);
+            opacity: 0.75;
+    
+        }
+        100%{
+            transform: translateX(0%);
+            opacity: 1;
+    
+        }
+    }
+    
+    #aboutsection p{
+        font-size:1em;
+        animation: fadetextright 2s linear 0.5s 1 alternate;
+    
+    }
+    @keyframes fadetextright {
+        0%{
+            transform: translateX(20%);
+        }
+        25%{
+            transform: translateX(15%);
+        }50%{
+            transform: translateX(10%);
+        }75%{
+            transform: translateX(5%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    
+    
        #aboutsummary{
         width: 70%;
+        
        }
        
        #aboutimage{
         width:40%; 
         display: flex; 
         justify-content: end;
+        animation: moveright 3s ease-in-out 0.5s 1;
+
+       }
+       @keyframes moveright {
+        0%{
+            transform: translateX(-10%);
+            opacity: 0;
+        }
+        
+        100%{
+            transform: translateX(0%);
+            opacity: 1;
+
+
+        }
        }
        #aboutimage img{
        
@@ -88,6 +170,8 @@ body p{
        }
        .aboutlink{
         display: flex;
+        animation:  fadetextright 2s linear 0.5s 1 alternate;;
+
        }
        .aboutlink a{
         padding: 0.2em;
@@ -106,8 +190,16 @@ body p{
         background-color:lightseagreen; 
         color: white; 
         font-size: 1.1rem;
+        animation:  fadetext 2s linear 0.5s 1 alternate;;
+
        }
-    
+       .aboutbutton button:hover{
+        color: black;
+        background-color: rgb(76, 149, 197);
+        border-top-right-radius:2rem; 
+        border-bottom-left-radius: 2rem; 
+        transition: all 2s;
+               }
     
          /*skill part of portfolio*/
          
@@ -115,10 +207,18 @@ body p{
         .skillsection{
     margin: 2rem 6rem;
     display: flex;
+    animation: moveright 3s ease-in-out 4s 1;
+
+    }
+    .skillsection p{
+        animation: fadetextright 2s linear 4s 1 alternate;
+
     }
         #skillsectionimage{
             width: 55%;
             margin: auto;
+            animation: moveleft 3s ease-in-out 4s 1;
+
         }
         #skillsectionimage img{
             width: 20rem;
@@ -130,6 +230,91 @@ body p{
             margin: 2rem 6rem;
         }
         
+
+
+
+
+        #span1{
+                
+            animation: span1 9s linear 2s infinite;
+            
+          }
+         #span2{
+          
+          animation: span2 9s linear 2s infinite;
+
+
+       }
+       #span3{
+          animation: span3 9s linear 2s infinite;
+
+       }
+         @keyframes span1 {
+          0%{
+              width: 0%;
+              background-color: lightseagreen;
+          }
+          25%{
+              width: 28%;
+              background-color: lightseagreen;
+
+          }
+          75%{
+              width: 58%;
+              background-color: lightseagreen;
+
+          }
+          100%{
+              width: 85%;
+              background-color: lightseagreen;
+
+          }
+         }
+         @keyframes span2 {
+          0%{
+              width: 0%;
+              background-color: lightseagreen;
+          }
+          25%{
+              width: 20%;
+              background-color: lightseagreen;
+
+          }
+          75%{
+              width: 48%;
+              background-color: lightseagreen;
+
+          }
+          100%{
+              width: 70%;
+              background-color: lightseagreen;
+
+          }
+         }
+        
+         @keyframes span3 {
+          0%{
+              width: 0%;
+              background-color: lightseagreen;
+          }
+          25%{
+              width: 25%;
+              background-color: lightseagreen;
+
+          }
+          75%{
+              width: 55%;
+              background-color: lightseagreen;
+
+          }
+          100%{
+              width: 80%;
+              background-color: lightseagreen;
+
+          }
+         }
+        
+
          /*experience section css*/
            .experience{
             display: flex; 
@@ -182,6 +367,10 @@ body p{
                 height: 35%;
                  border-top-left-radius: 1rem; 
                  border-top-right-radius: 1rem;
+               }
+               .card img:hover{
+                opacity: 0.5;
+                transition: all 0.7s ease-in-out;
                }
                .cardtitle{
                 display:flex; 
@@ -239,7 +428,7 @@ body p{
     
        .cover{
         border:1px solid black; 
-        background-color:#F3EFEF; 
+        background-color:white; 
         border-radius: 2rem; 
         height:0.6rem;
          }
@@ -296,7 +485,34 @@ body p{
         font-size: 0.8em;
         color: grey;
        }
-    
+       #contacttele img{
+
+        animation: ringcall 6s ease-in-out 0.5s infinite alternate;    
+        }
+        @keyframes ringcall {
+            0%{
+                transform: rotate(15deg);
+            }
+            15%{
+                transform: rotate(30deg);
+            }
+            30%{
+                transform: rotate(45deg);
+            }
+            45%{
+                transform: rotate(60deg);
+            }
+            60%{
+                transform: rotate(45deg);
+            }
+            75%{
+                transform: rotate(30deg);
+            }
+            100%{
+                transform: rotate(15deg);
+            }
+            
+        }
     
     
 }
@@ -459,6 +675,10 @@ body p{
             height: 45%;
              border-top-left-radius: 1rem; 
              border-top-right-radius: 1rem;
+           }
+           .card img:hover{
+            opacity: 0.7;
+            transition: all 0.7s ease-in-out;
            }
            .cardtitle{
             display:flex; 
