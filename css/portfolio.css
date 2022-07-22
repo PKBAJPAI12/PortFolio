@@ -52,14 +52,21 @@ body p{
         height:3px;
         width:30px;
         margin-bottom: 0.2em;
-        background-color:black;
+        background-color:white;
     }
     #line2{
         height:3px;
         width:27px;
         margin-left:3px;
         margin-bottom: 0.2em;
-        background-color:black;
+        background-color:white;
+    }
+     #line3{
+        height:3px;
+        width:24px;
+        margin-left:6px;
+        margin-bottom: 0.2em;
+        background-color:white;
     }
   
     .circle{
